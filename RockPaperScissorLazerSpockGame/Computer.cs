@@ -12,10 +12,11 @@ namespace RockPaperScissorLazerSpockGame
         {
 
         }
-        public override void PickAGesture()
+        public override int PickAGesture()
         {
             int randomNumber = RandomNumber(0, 4);
             gesture = gestures[randomNumber];
+            return int.Parse(gestures[randomNumber]);
         }
         int RandomNumber(int min, int max)
         {
