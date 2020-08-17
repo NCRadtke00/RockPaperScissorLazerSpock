@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissorLazerSpockGame
 {
-    class Computer : Player
+    public class Computer : Player
     {
         public Computer()
         {
