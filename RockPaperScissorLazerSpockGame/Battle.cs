@@ -70,6 +70,11 @@ namespace RockPaperScissorLazerSpockGame
             {
                 Console.WriteLine("Draw partner! Pick new gestures!");
             }
+            else if (playerOne.gesture == "rock")
+            else if (playerOne.gesture == "scissors")
+            else if (playerOne.gesture == "paper")
+            else if (playerOne.gesture == "lizard")
+            else if (playerOne.gesture == "spock")
 
         }
         public void DisplayWinner()
