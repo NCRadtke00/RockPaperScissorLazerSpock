@@ -12,14 +12,19 @@ namespace RockPaperScissorLazerSpockGame
         public int score;
         public string gesture;
         public List<string> gestures;
-
         public Player()
         {
-
+            Gestures();
         }
+        public abstract void PickAGesture();
         public void Gestures()
         {
-
+            gestures = new List<string>();
+            this.gestures.Add("rock");
+            this.gestures.Add("paper");
+            this.gestures.Add("scissors");
+            this.gestures.Add("lizard");
+            this.gestures.Add("spock");
         }
     }
 }
