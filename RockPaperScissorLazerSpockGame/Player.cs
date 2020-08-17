@@ -16,7 +16,7 @@ namespace RockPaperScissorLazerSpockGame
         {
             Gestures();
         }
-        public abstract int PickAGesture();
+        public abstract string PickAGesture();
         public void Gestures()
         {
             gestures = new List<string>();

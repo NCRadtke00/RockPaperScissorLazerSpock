@@ -29,6 +29,7 @@ namespace RockPaperScissorLazerSpockGame
         public void GameIntro()
         {
             Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("-----  Rock --- Paper --- Scissors --- Lizard --- Spock --- Shoot!  -----");
             Console.WriteLine("- Welcome to the fastest hand slinging shootout this side of the patomac!");
             Console.WriteLine("--------------How many users do we have playing one or two?--------------");
             Console.WriteLine("-------------------------------------------------------------------------");
@@ -53,14 +54,23 @@ namespace RockPaperScissorLazerSpockGame
         {
             while (playerOneScore < 2 && playerTwoScore < 2)
             {
-                int playerOneGesture = playerOne.PickAGesture();
-                int playerTwoGesture = playerTwo.PickAGesture();
+                Console.WriteLine("Player one, please pick a hand gesture to use");
+                string playerOneGesture = playerOne.PickAGesture();
+                Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine("Player two, please pick a hand gesture to use");
+                string playerTwoGesture = playerTwo.PickAGesture();
+                Console.ReadLine();
+                Console.Clear();
                 CompareGestures();
             }
             while (playerOneScore < 2 && computerScore < 2)
             {
-                int playerOneGester = playerOne.PickAGesture();
-                int computerGester = computer.PickAGesture();
+                Console.WriteLine("Player one, please pick a hand gesture to use");
+                string playerOneGester = playerOne.PickAGesture();
+                Console.ReadLine();
+                Console.Clear();
+                string computerGester = computer.PickAGesture();
                 CompareGestures();
             }
         }
@@ -76,11 +86,16 @@ namespace RockPaperScissorLazerSpockGame
                 {
                     playerOneScore++;
                     Console.WriteLine($"Player 1 picked: {playerOne.gesture}. Player 2 picked: {playerTwo.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                    Console.ReadLine();
+                    Console.Clear();
                 }
 
                 else
                 {
                     playerTwoScore++;
+                    Console.WriteLine($"Player 2 picked: {playerTwo.gesture}. Player 1 picked: {playerOne.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                    Console.ReadLine();
+                    Console.Clear();
                 }
             }
             else if (playerOne.gesture == "scissors")
@@ -89,10 +104,15 @@ namespace RockPaperScissorLazerSpockGame
                 {
                     playerOneScore++;
                     Console.WriteLine($"Player 1 picked: {playerOne.gesture}. Player 2 picked: {playerTwo.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                    Console.ReadLine();
+                    Console.Clear();
                 }
                 else
                 {
                     playerTwoScore++;
+                    Console.WriteLine($"Player 2 picked: {playerTwo.gesture}. Player 1 picked: {playerOne.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                    Console.ReadLine();
+                    Console.Clear();
                 }
             }
             else if (playerOne.gesture == "paper")
@@ -101,10 +121,15 @@ namespace RockPaperScissorLazerSpockGame
                 {
                     playerOneScore++;
                     Console.WriteLine($"Player 1 picked: {playerOne.gesture}. Player 2 picked: {playerTwo.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                    Console.ReadLine();
+                    Console.Clear();
                 }
                 else
                 {
                     playerTwoScore++;
+                    Console.WriteLine($"Player 2 picked: {playerTwo.gesture}. Player 1 picked: {playerOne.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                    Console.ReadLine();
+                    Console.Clear();
                 }
             }
             else if (playerOne.gesture == "lizard")
@@ -113,10 +138,15 @@ namespace RockPaperScissorLazerSpockGame
                 {
                     playerOneScore++;
                     Console.WriteLine($"Player 1 picked: {playerOne.gesture}. Player 2 picked: {playerTwo.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                    Console.ReadLine();
+                    Console.Clear();
                 }
                 else
                 {
                     playerTwoScore++;
+                    Console.WriteLine($"Player 2 picked: {playerTwo.gesture}. Player 1 picked: {playerOne.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                    Console.ReadLine();
+                    Console.Clear();
                 }
             }
             else if (playerOne.gesture == "spock")
@@ -125,10 +155,15 @@ namespace RockPaperScissorLazerSpockGame
                 {
                     playerOneScore++;
                     Console.WriteLine($"Player 1 picked: {playerOne.gesture}. Player 2 picked: {playerTwo.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                    Console.ReadLine();
+                    Console.Clear();
                 }
                 else
                 {
                     playerTwoScore++;
+                    Console.WriteLine($"Player 2 picked: {playerTwo.gesture}. Player 1 picked: {playerOne.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                    Console.ReadLine();
+                    Console.Clear();
                 }
             }
         }
@@ -137,10 +172,14 @@ namespace RockPaperScissorLazerSpockGame
             if (playerOneScore > playerTwoScore)
             {
                 Console.WriteLine("Player 1 wins!");
+                Console.ReadLine();
+                Console.Clear();
             }
             else
             {
                 Console.WriteLine("Player 2 wins!");
+                Console.ReadLine();
+                Console.Clear();
             }
         }
 
