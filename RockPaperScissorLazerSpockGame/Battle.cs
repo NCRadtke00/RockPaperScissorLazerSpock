@@ -35,6 +35,10 @@ namespace RockPaperScissorLazerSpockGame
                 computer = new Computer();
             }
         }
+        public void DisplayWinner()
+        {
+
+        }
 
     }
 }
