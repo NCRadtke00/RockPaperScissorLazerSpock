@@ -66,6 +66,10 @@ namespace RockPaperScissorLazerSpockGame
         }
         public void CompareGestures()
         {
+            if (playerOne.gesture == playerTwo.gesture)
+            {
+                Console.WriteLine("Draw partner! Pick new gestures!");
+            }
 
         }
         public void DisplayWinner()
