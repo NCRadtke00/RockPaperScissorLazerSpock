@@ -8,9 +8,23 @@ namespace RockPaperScissorLazerSpockGame
 {
     class Battle
     {
+        Player playerOne;
+        Player playerTwo;
+        Computer computer;
+        int playerOneScore;
+        int playerTwoScore;
+        int computerScore;
+        Random rand;
         public Battle()
         {
+            playerOneScore = 0;
+            playerTwoScore = 0;
+            computerScore = 0;
+            rand = new Random();
 
+            GameIntro();
+            ThrowGestures();
+            DisplayWinner();
         }
         public void GameIntro()
         {
@@ -37,7 +51,18 @@ namespace RockPaperScissorLazerSpockGame
         }
         public void ThrowGestures()
         {
-
+            while (playerOneScore < 2 && playerTwoScore < 2)
+            {
+                int playerOneGesture = playerOne.PickGesture();
+                int playerTwoGesture = playerTwo.PickGesture();
+                CompareGestures();
+            }
+            while (playerOneScore < 2 && computerScore < 2)
+            {
+                int playerOneGester = playerOne.PickGesture();
+                int computerGester = computer.PickGesture();
+                CompareGestures();
+            }
         }
         public void DisplayWinner()
         {
