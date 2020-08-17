@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissorLazerSpockGame
 {
-    class Player
+    public abstract class Player
     {
+        public string name;
+        public int score;
+        public string gesture;
+        public List<string> gestures;
+
+        public Player()
+        {
+
+        }
+        public void Gestures()
+        {
+
+        }
     }
 }
