@@ -64,7 +64,10 @@ namespace RockPaperScissorLazerSpockGame
                 CompareGestures();
             }
         }
+        public void CompareGestures()
+        {
 
+        }
         public void DisplayWinner()
         {
             if (playerOneScore > playerTwoScore)
