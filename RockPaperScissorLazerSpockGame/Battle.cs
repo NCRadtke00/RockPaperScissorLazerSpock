@@ -40,7 +40,7 @@ namespace RockPaperScissorLazerSpockGame
             Console.ReadLine();
             Console.WriteLine("-------------------------------------------------------------------------");
             Console.WriteLine("-------------------------------------------------------------------------");
-            Console.WriteLine("------  Please select how many users we have playing one or two?  -------");
+            Console.WriteLine("------  Please select how many users we have playing, one or two?  ------");
             Console.WriteLine("-------------------------------------------------------------------------");
             Console.WriteLine("-------------------------------------------------------------------------");
             Console.WriteLine("----------------------   ( 1 ) One User   -------------------------------");
@@ -49,13 +49,13 @@ namespace RockPaperScissorLazerSpockGame
             Console.WriteLine("----------------------------   ( 2 ) Two Users   ------------------------");
             Console.WriteLine("-------------------------------------------------------------------------");
             Console.WriteLine("-------------------------------------------------------------------------");
-            string playerResult = Console.ReadLine();
-            if (playerResult == "1")
+            ConsoleKeyInfo thing = Console.ReadKey();
+            if (thing.Key == ConsoleKey.D1)
             {
                 playerOne = new User();
                 playerTwo = new User();
             }
-            else if (playerResult == "2")
+            else if (thing.Key == ConsoleKey.D2)
             {
                 playerOne = new User();
                 playerTwo = new Computer();
