@@ -16,6 +16,16 @@ namespace RockPaperScissorLazerSpockGame
         {
             Console.WriteLine("Please pick the hand gesture you would like to use! \n" + "--- 1 = Rock --- \n" + "--- 2 = paper --- \n" + "--- 3 = scissors --- \n" + "--- 4 = lizard --- \n" + "--- 5 = spock --- \n");
             string results = Console.ReadLine();
+            //ConsoleKeyInfo thing = Console.ReadKey();
+
+            //if(thing.Key == ConsoleKey.D1)
+            //{
+            //    gesture = "rock";
+            //    Console.WriteLine("You picked rock!");
+            //    Console.ReadLine();
+            //    return "rock";
+            //}
+            //else if (thing.Key == ConsoleKey.D2)
 
             if (results == "1" || results == "One" || results == "one")
             {
@@ -63,11 +73,15 @@ namespace RockPaperScissorLazerSpockGame
                 return results;
                
             }
-
             //switch (results)
             //{
             //    case "1":
+            //    case "One":
+            //    case "one":
             //        gesture = "rock";
+            //        Console.WriteLine("You picked Rock");
+            //        return "rock";
+            //    default:
             //        break;
             //    case "2":
             //        gesture = "paper";

@@ -10,18 +10,19 @@ namespace RockPaperScissorLazerSpockGame
     {
         Player playerOne;
         Player playerTwo;
-        Computer computer;
         int playerOneScore;
         int playerTwoScore;
-        int computerScore;
         Random rand;
+
         public Battle()
         {
             playerOneScore = 0;
             playerTwoScore = 0;
-            computerScore = 0;
             rand = new Random();
-
+           
+        }
+        public void RunGame()
+        {
             GameIntro();
             ThrowGestures();
             DisplayWinner();
@@ -29,13 +30,23 @@ namespace RockPaperScissorLazerSpockGame
         public void GameIntro()
         {
             Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("-------------------------------------------------------------------------");
             Console.WriteLine("-----  Rock --- Paper --- Scissors --- Lizard --- Spock --- Shoot!  -----");
-            Console.WriteLine("- Welcome to the fastest hand slinging shootout this side of the patomac!");
-            Console.WriteLine("--------------How many users do we have playing one or two?--------------");
             Console.WriteLine("-------------------------------------------------------------------------");
-            Console.WriteLine("------------------------ ( 1 ) One User ---------------------------------");
             Console.WriteLine("-------------------------------------------------------------------------");
-            Console.WriteLine("------------------------------ ( 2 ) Two Users --------------------------");
+            Console.WriteLine(" Welcome to the fastest hand slinging shootout this side of the Atlantic!");
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.ReadLine();
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("------  Please select how many users we have playing one or two?  -------");
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("----------------------   ( 1 ) One User   -------------------------------");
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("----------------------------   ( 2 ) Two Users   ------------------------");
             Console.WriteLine("-------------------------------------------------------------------------");
             Console.WriteLine("-------------------------------------------------------------------------");
             string playerResult = Console.ReadLine();
@@ -47,7 +58,7 @@ namespace RockPaperScissorLazerSpockGame
             else if (playerResult == "2")
             {
                 playerOne = new User();
-                computer = new Computer();
+                playerTwo = new Computer();
             }
         }
         public void ThrowGestures()
@@ -64,15 +75,7 @@ namespace RockPaperScissorLazerSpockGame
                 Console.Clear();
                 CompareGestures();
             }
-            while (playerOneScore < 2 && computerScore < 2)
-            {
-                Console.WriteLine("Player one, please pick a hand gesture to use");
-                string playerOneGester = playerOne.PickAGesture();
-                Console.ReadLine();
-                Console.Clear();
-                string computerGester = computer.PickAGesture();
-                CompareGestures();
-            }
+
         }
         public void CompareGestures()
         {
