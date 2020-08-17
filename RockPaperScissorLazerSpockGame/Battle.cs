@@ -26,9 +26,13 @@ namespace RockPaperScissorLazerSpockGame
             string playerResult = Console.ReadLine();
             if (playerResult == "1")
             {
+                playerOne = new User();
+                playerTwo = new User();
             }
             else if (playerResult == "2")
             {
+                playerOne = new User();
+                computer = new Computer();
             }
         }
 
