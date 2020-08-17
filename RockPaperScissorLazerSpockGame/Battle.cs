@@ -23,7 +23,13 @@ namespace RockPaperScissorLazerSpockGame
             Console.WriteLine("------------------------------ ( 2 ) Two Users --------------------------");
             Console.WriteLine("-------------------------------------------------------------------------");
             Console.WriteLine("-------------------------------------------------------------------------");
-
+            string playerResult = Console.ReadLine();
+            if (playerResult == "1")
+            {
+            }
+            else if (playerResult == "2")
+            {
+            }
         }
 
     }
