@@ -53,14 +53,14 @@ namespace RockPaperScissorLazerSpockGame
         {
             while (playerOneScore < 2 && playerTwoScore < 2)
             {
-                int playerOneGesture = playerOne.PickGesture();
-                int playerTwoGesture = playerTwo.PickGesture();
+                int playerOneGesture = playerOne.PickAGesture();
+                int playerTwoGesture = playerTwo.PickAGesture();
                 CompareGestures();
             }
             while (playerOneScore < 2 && computerScore < 2)
             {
-                int playerOneGester = playerOne.PickGesture();
-                int computerGester = computer.PickGesture();
+                int playerOneGester = playerOne.PickAGesture();
+                int computerGester = computer.PickAGesture();
                 CompareGestures();
             }
         }

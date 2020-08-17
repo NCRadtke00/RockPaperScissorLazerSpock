@@ -14,7 +14,13 @@ namespace RockPaperScissorLazerSpockGame
         }
         public override void PickAGesture()
         {
-            throw new NotImplementedException();
+            int randomNumber = RandomNumber(0, 4);
+            gesture = gestures[randomNumber];
+        }
+        int RandomNumber(int min, int max)
+        {
+            Random random = new Random();
+            return random.Next(min, max);
         }
 
     }
