@@ -10,6 +10,7 @@ namespace RockPaperScissorLazerSpockGame
     {
         static void Main(string[] args)
         {
+            Battle battle = new Battle();
         }
     }
 }
