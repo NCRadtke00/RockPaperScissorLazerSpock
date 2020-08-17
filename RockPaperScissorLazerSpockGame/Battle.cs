@@ -71,11 +71,66 @@ namespace RockPaperScissorLazerSpockGame
                 Console.WriteLine("Draw partner! Pick new gestures!");
             }
             else if (playerOne.gesture == "rock")
-            else if (playerOne.gesture == "scissors")
-            else if (playerOne.gesture == "paper")
-            else if (playerOne.gesture == "lizard")
-            else if (playerOne.gesture == "spock")
+            {
+                if (playerTwo.gesture == "scissors" || playerTwo.gesture == "lizard")
+                {
+                    playerOneScore++;
+                    Console.WriteLine($"Player 1 picked: {playerOne.gesture}. Player 2 picked: {playerTwo.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                }
 
+                else
+                {
+                    playerTwoScore++;
+                }
+            }
+            else if (playerOne.gesture == "scissors")
+            {
+                if (playerTwo.gesture == "paper" || playerTwo.gesture == "lizard")
+                {
+                    playerOneScore++;
+                    Console.WriteLine($"Player 1 picked: {playerOne.gesture}. Player 2 picked: {playerTwo.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                }
+                else
+                {
+                    playerTwoScore++;
+                }
+            }
+            else if (playerOne.gesture == "paper")
+            {
+                if (playerTwo.gesture == "rock" || playerTwo.gesture == "spock")
+                {
+                    playerOneScore++;
+                    Console.WriteLine($"Player 1 picked: {playerOne.gesture}. Player 2 picked: {playerTwo.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                }
+                else
+                {
+                    playerTwoScore++;
+                }
+            }
+            else if (playerOne.gesture == "lizard")
+            {
+                if (playerTwo.gesture == "spock" || playerTwo.gesture == "paper")
+                {
+                    playerOneScore++;
+                    Console.WriteLine($"Player 1 picked: {playerOne.gesture}. Player 2 picked: {playerTwo.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                }
+                else
+                {
+                    playerTwoScore++;
+                }
+            }
+            else if (playerOne.gesture == "spock")
+            {
+                if (playerTwo.gesture == "scissors" || playerTwo.gesture == "rock")
+                {
+                    playerOneScore++;
+                    Console.WriteLine($"Player 1 picked: {playerOne.gesture}. Player 2 picked: {playerTwo.gesture}. Player 1 score is currently: {playerOneScore}. Player 2 score is currently: {playerTwoScore}.");
+                }
+                else
+                {
+                    playerTwoScore++;
+                }
+            }
         }
         public void DisplayWinner()
         {
