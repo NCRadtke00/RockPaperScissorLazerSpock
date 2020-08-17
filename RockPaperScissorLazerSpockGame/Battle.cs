@@ -55,29 +55,24 @@ namespace RockPaperScissorLazerSpockGame
             Console.WriteLine("-----------------------------------------------------------------------------------");
             Console.WriteLine("-----------------------------------------------------------------------------------");
             Console.WriteLine("------------                                                           ------------");
-            Console.WriteLine("------------      Scissors cuts Paper, Scissors decapitates Lizard     ------------");
+            Console.WriteLine("------------        Rock crushed Scissors, Rock smashes Lizard         ------------");
             Console.WriteLine("------------                                                           ------------");
-            Console.WriteLine("-----------------------------------------------------------------------------------");
             Console.WriteLine("-----------------------------------------------------------------------------------");
             Console.WriteLine("------------                                                           ------------");
             Console.WriteLine("------------         Paper covers Rock, Paper disproves Spock          ------------");
             Console.WriteLine("------------                                                           ------------");
             Console.WriteLine("-----------------------------------------------------------------------------------");
-            Console.WriteLine("-----------------------------------------------------------------------------------");
             Console.WriteLine("------------                                                           ------------");
-            Console.WriteLine("------------        Rock crushed scissors, Rock smashes Lizard         ------------");
+            Console.WriteLine("------------      Scissors cuts Paper, Scissors decapitates Lizard     ------------");
             Console.WriteLine("------------                                                           ------------");
-            Console.WriteLine("-----------------------------------------------------------------------------------");
             Console.WriteLine("-----------------------------------------------------------------------------------");
             Console.WriteLine("------------                                                           ------------");
             Console.WriteLine("------------          Lizard poisons Spock, Lizard eats Paper          ------------");
             Console.WriteLine("------------                                                           ------------");
             Console.WriteLine("-----------------------------------------------------------------------------------");
-            Console.WriteLine("-----------------------------------------------------------------------------------");
             Console.WriteLine("------------                                                           ------------");
             Console.WriteLine("------------       Spock smashes Scissors, Spock vaporizes Rock        ------------");
             Console.WriteLine("------------                                                           ------------");
-            Console.WriteLine("-----------------------------------------------------------------------------------");
             Console.WriteLine("-----------------------------------------------------------------------------------");
             Console.ReadLine();
             Console.Clear();
@@ -97,12 +92,12 @@ namespace RockPaperScissorLazerSpockGame
             if (thing.Key == ConsoleKey.D1)
             {
                 playerOne = new User();
-                playerTwo = new User();
+                playerTwo = new Computer();
             }
             else if (thing.Key == ConsoleKey.D2)
             {
                 playerOne = new User();
-                playerTwo = new Computer();
+                playerTwo = new User();
             }
             Console.Clear();
         }
