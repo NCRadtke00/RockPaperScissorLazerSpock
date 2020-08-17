@@ -12,9 +12,9 @@ namespace RockPaperScissorLazerSpockGame
         {
 
         }
-        public override void PickAGesture()
+        public override int PickAGesture()
         {
-            Console.WriteLine("Pick the Gesture you would like to use! \n" + "--- 1 = Rock --- \n" + "--- 2 = paper --- \n" + "--- 3 = scissors --- \n" + "--- 4 = lizard --- \n" + "--- 5 = spock --- \n");
+            Console.WriteLine("Please pick the hand gesture you would like to use! \n" + "--- 1 = Rock --- \n" + "--- 2 = paper --- \n" + "--- 3 = scissors --- \n" + "--- 4 = lizard --- \n" + "--- 5 = spock --- \n");
             string results = Console.ReadLine();
 
             if (results == "1" || results == "One" || results == "one")
@@ -39,10 +39,28 @@ namespace RockPaperScissorLazerSpockGame
             }
             else
             {
-                Console.WriteLine("Please pick a gesture use its assigned number");
+                Console.WriteLine("Please try again and pick a gesture using its assigned number");
             }
 
+            //switch (results)
+            //{
+            //    case "1":
+            //        gesture = "rock";
+            //        break;
+            //    case "2":
+            //        gesture = "paper";
+            //        break;
+            //    case "3":
+            //        gesture = "scissors";
+            //        break;
+            //    case "4":
+            //        gesture = "lizard";
+            //        break;
+            //    case "5":
+            //        gesture = "spock";
+            //        break;
 
+        }
         }
 
     }
