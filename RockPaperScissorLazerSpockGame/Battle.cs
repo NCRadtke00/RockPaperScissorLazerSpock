@@ -35,9 +35,20 @@ namespace RockPaperScissorLazerSpockGame
                 computer = new Computer();
             }
         }
-        public void DisplayWinner()
+        public void ThrowGestures()
         {
 
+        }
+        public void DisplayWinner()
+        {
+            if (playerOneScore > playerTwoScore)
+            {
+                Console.WriteLine("Player 1 wins!");
+            }
+            else
+            {
+                Console.WriteLine("Player 2 wins!");
+            }
         }
 
     }
