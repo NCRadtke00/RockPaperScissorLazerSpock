@@ -23,6 +23,5 @@ namespace RockPaperScissorLazerSpockGame
             Random random = new Random();
             return random.Next(min, max);
         }
-
     }
 }
